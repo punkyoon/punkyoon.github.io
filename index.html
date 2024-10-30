@@ -1,364 +1,975 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Profile of Jiyoon Ha" />
-    <meta name="author" content="Jiyoon Ha" />
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1, viewport-fit=cover"
+        />
+        <meta name="description" content="Profile of Jiyoon Ha" />
+        <meta name="author" content="Jiyoon Ha" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>"
+        />
 
+        <title>Jiyoon Ha</title>
 
-    <title>Jiyoon Ha</title>
+        <!-- load bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- load bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
+        <!-- load font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container" style="margin-top: 20px; margin-bottom: 20px">
+            <!-- simple profile -->
+            <div class="row justify-content-start align-items-center">
+                <!-- Name and Contact info -->
+                <div class="col me-auto">
+                    <h3>
+                        Jiyoon Ha
+                        <small class="text-secondary">
+                            punkkid001@gmail.com
+                        </small>
+                    </h3>
+                    <small>
+                        <a href="mailto:punkkid001@gmail.com">
+                            <i class="fas fa-at"></i>
+                        </a>
+                        <a
+                            href="https://github.com/punkyoon"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-github fa-md"></i>
+                        </a>
+                        <a
+                            href="https://medium.com/@punkyoon"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-medium-m"></i>
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/jiyoon-ha"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fab fa-linkedin-in fa-md"></i>
+                        </a>
+                    </small>
 
+                    <small>Software engineer in South Korea</small>
+                </div>
 
-    <!-- load font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
-      <!-- simple profile -->
-      <div class="row">
-        <!-- profile icon -->
-        <div style="display: inline-block;">
-          <img src="phantom-icon.gif" width="64px" height="64px" />
+                <!-- profile icon -->
+                <div class="col-auto">
+                    <img src="phantom-icon.gif" width="64px" height="64px" />
+                </div>
+            </div>
+
+            <hr style="margin-bottom: 2rem" />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- title -->
+                    <h4>Work Experiences</h4>
+                    <hr />
+
+                    <!-- details -->
+                    <dl>
+                        <dt>
+                            Software Development Engineer
+                            <small>
+                                <span
+                                    class="spinner-border text-primary spinner-border-sm"
+                                    role="status"
+                                >
+                                    <span class="visually-hidden"
+                                        >Somewhere in Pangyo, Seongnam</span
+                                    >
+                                </span>
+                                , 2024.01.15 ~ Current
+                            </small>
+                        </dt>
+                        <dd>
+                            Working as a backend engineer, currently focused on
+                            the generative AI domain.
+
+                            <div>
+                                <small class="text-secondary">
+                                    > Rust, Axum, TypeScript, React, NextJS,
+                                    Python, Celery, AWS
+                                </small>
+                            </div>
+                        </dd>
+
+                        <dt>
+                            Software Engineer
+                            <small>
+                                <a
+                                    href="https://www.rapportlabs.kr"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Rapportlabs
+                                </a>
+                                , 2021.09.01 ~ 2024.01.05
+                            </small>
+                        </dt>
+                        <dd>
+                            Worked as a backend engineer with expertise in the
+                            e-commerce domain, focusing on product, fulfillment,
+                            and settlement. Additionally, Have experience as a
+                            team leader in a business tribe.
+
+                            <div>
+                                <small class="text-secondary">
+                                    > Kotlin, Spring Boot, Groovy, Keycloak
+                                </small>
+
+                                <ul>
+                                    <li>
+                                        <small>
+                                            <a
+                                                href="https://web.queenit.kr"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
+                                                Queenit
+                                            </a>
+                                        </small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </dd>
+
+                        <dt>
+                            Software Engineer
+                            <small>
+                                <a
+                                    href="https://hyperconnect.com/?lang=en"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Hyperconnect
+                                </a>
+                                , 2018.07.04 ~ 2021.05.16
+                            </small>
+                        </dt>
+                        <dd>
+                            Worked as a full-stack developer, familiar with i18n
+                            works, WebRTC and real-time communication on
+                            WebSocket. Successfully launched the web version of
+                            Hakuna, a video chat service.
+
+                            <div>
+                                <small class="text-secondary">
+                                    > Python, Django, TypeScript, React, NextJS,
+                                    Express, Kotlin, Spring Boot
+                                </small>
+
+                                <ul>
+                                    <li>
+                                        <small>
+                                            <a
+                                                href="https://hakuna.live"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
+                                                Hakuna (Meet, Chat, Live!)
+                                            </a>
+                                        </small>
+                                    </li>
+                                    <li>
+                                        <small>
+                                            <a
+                                                href="https://azarlive.com"
+                                                target="_blank"
+                                                rel="noopener"
+                                            >
+                                                Azar (Discover & Connect)
+                                            </a>
+                                        </small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </dd>
+
+                        <dt>
+                            Teaching Assistant
+                            <small>Fast Campus, 2017.03 ~ 2017.07</small>
+                        </dt>
+                        <dd>
+                            Worked as a teaching assistant at
+                            <a
+                                class="link-secondary"
+                                href="https://m.blog.naver.com/fastcampus/220942981452"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Web service development using Python & Django
+                                CAMP.
+                            </a>
+                        </dd>
+
+                        <dt>
+                            Research Intern
+                            <small>
+                                Konkuk University WICE Lab, 2017.05 ~ 2017.06
+                            </small>
+                        </dt>
+                        <dd>
+                            Developed real-time data visualization tool for
+                            analyzing pet behavior data from the Bluetooth
+                            sensor.
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Experiences</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>
+                            Certified Trainee
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://swmaestro.org"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Software Maestro (8th)
+                                </a>
+                                , 2017.08.02 ~ 2019.02.24
+                            </small>
+                        </dt>
+                        <dd>
+                            Developed backend for an identical person tracking
+                            system in multi-video.
+                        </dd>
+
+                        <dt>
+                            Student Evangelist
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://msdn.microsoft.com/microsoftstudentpartners"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Microsoft Student Partners (Korea)
+                                </a>
+                                , 2016.09 ~ 2017.06</small
+                            >
+                        </dt>
+                        <dd>
+                            Organized a seminar with my team members on
+                            <a
+                                class="link-secondary"
+                                href="http://web.archive.org/web/20161110184815/onoffmix.com/event/82705/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                creating simple web services using Django
+                                (2016.11.29)
+                            </a>
+                            at an event that provided an overview of Microsoft
+                            technology trends . Also shared the inferomation
+                            about TypeScript.
+                        </dd>
+
+                        <dt>
+                            Trainee
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://boostcamp.connect.or.kr/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    BoostCamp
+                                </a>
+                                , 2017.01</small
+                            >
+                        </dt>
+                        <dd>Trained being an iOS developer.</dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Projects</h4>
+                    <hr />
+
+                    <div class="bd-example" style="padding-bottom: 20px">
+                        <!-- 2021 -->
+                        <details open="">
+                            <summary>2021</summary>
+                            <dl>
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/bang-gwi"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        bang-gwi
+                                    </a>
+                                    <small>Python</small>
+                                </dt>
+                                <small>
+                                    <i>
+                                        > Based on the
+                                        <a
+                                            class="link-secondary"
+                                            href="https://github.com/pjongy/shook-lang"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            shook-lang
+                                        </a>
+                                        project
+                                    </i>
+                                </small>
+                                <dd>
+                                    A Korean-based programming language. Just
+                                    for fun.
+                                </dd>
+                            </dl>
+                        </details>
+
+                        <!-- 2020 -->
+                        <details open="">
+                            <summary>2020</summary>
+                            <dl>
+                                <dt>
+                                    <a
+                                        href="https://github.com/django-breaker/drf-case-middleware"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        drf-case-middleware
+                                    </a>
+                                    <small>Python, PyPI</small>
+                                </dt>
+                                <small>
+                                    <i>
+                                        > Based on the
+                                        <a
+                                            class="link-secondary"
+                                            href="https://github.com/vbabiy/djangorestframework-camel-case"
+                                            target="_blank"
+                                            rel="noopener"
+                                        >
+                                            djangorestframework-camel-case
+                                        </a>
+                                        project
+                                    </i>
+                                </small>
+                                <dd>
+                                    Middleware for Django REST Framework
+                                    modifying request/response data format.
+                                </dd>
+                            </dl>
+                        </details>
+
+                        <!-- 2019 -->
+                        <details open="">
+                            <summary>2019</summary>
+                            <dl>
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/ring-butter"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        ring-butter
+                                    </a>
+                                    <small>Typescript, Jest, NPM</small>
+                                </dt>
+                                <dd>Circular buffer utility in Typescript.</dd>
+                            </dl>
+                        </details>
+
+                        <!-- 2018 -->
+                        <details open="">
+                            <summary>2018</summary>
+                            <dl>
+                                <dt>D-RFS <small>C</small></dt>
+                                <dd>
+                                    Dynamic RFS table management to improve
+                                    packet processing locality in the Linux.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/city-night-timeline"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        city-night-timeline
+                                    </a>
+                                    <small>
+                                        Python, Django, Typescript, Vue.js
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Timeline service available only at night.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/nojambot"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        nojambot
+                                    </a>
+                                    <small>Python, asyncio</small>
+                                </dt>
+                                <dd>
+                                    Korean dad joker bot for Twitter and Slack.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/eswww"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        pi-snap
+                                    </a>
+                                    <small>
+                                        C, Linux Kernel Module, Sensor Driver,
+                                        Socket Programming, Python, asyncio
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Desktop camera application with Raspberry-Pi
+                                    using light sensor, MCP3208, button, LED,
+                                    and ultrasonic sensor.
+                                </dd>
+                            </dl>
+                        </details>
+
+                        <!-- 2017 -->
+                        <details>
+                            <summary>2017</summary>
+                            <dl>
+                                <dt>
+                                    <a
+                                        href="https://github.com/dzzp"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        ARGOS
+                                    </a>
+                                    <small>
+                                        Python, Django, RESTful API, Video/Image
+                                        Processing
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Backend for an identical person tracking
+                                    system in multi-video.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/pokinator"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        pokinator
+                                    </a>
+                                    <small>Python, PyPI</small>
+                                </dt>
+                                <dd>
+                                    Heroku-like random Pokemon name genereator.
+                                </dd>
+
+                                <dt>
+                                    knock-knock-bot
+                                    <small>
+                                        Python, Flask, Chatbot, KakaoTalk
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Chatbot for KakaoTalk PlusFriends service to
+                                    track delivery.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/study-hard"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        study-hard
+                                    </a>
+                                    <small>
+                                        Python, Django, WebSocket, PostgreSQL,
+                                        Redis, Docker
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Web-based application for managing study
+                                    group.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/dust-attack"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        dust-attack
+                                    </a>
+                                    <small>Python</small>
+                                </dt>
+                                <dd>
+                                    Slackbot to inform air quality information.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/punkyoon/beautiful-chart-service"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        beautiful-chart-service
+                                    </a>
+                                    <small>
+                                        Python, Flask, Socket.IO, billboard.js
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Web-based real-time data visualization tool.
+                                </dd>
+
+                                <dt>
+                                    <a
+                                        href="https://github.com/dduk-ddak"
+                                        target="_blank"
+                                        rel="noopener"
+                                    >
+                                        coding-night-live
+                                    </a>
+                                    <small>
+                                        Python, Django, WebSocket, PostgreSQL,
+                                        Redis, Docker
+                                    </small>
+                                </dt>
+                                <dd>
+                                    Web-based communication application for
+                                    developing a software together.
+                                </dd>
+                            </dl>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Awards</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>
+                            2018 KSC Outstanding Paper Award
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://www.kiise.or.kr"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    KIISE
+                                </a>
+                                , 2018.12.19</small
+                            >
+                        </dt>
+                        <dt>
+                            2018 Software Competition: 3rd Prize
+                            <small>Konkuk University, 2018.11.6</small>
+                        </dt>
+                        <dd>
+                            Implemented linux kernel module and patch to manage
+                            size of RFS table dynamically for improving packet
+                            processing locality.
+                        </dd>
+
+                        <dt>
+                            Best Dream Semester Project: 3rd Prize
+                            <small>Konkuk University, 2017.12.15</small>
+                        </dt>
+                        <dd>
+                            Developed smart presentation and discussion service
+                            based on web.
+                        </dd>
+
+                        <dt>
+                            K-ibwa ICT Mentoring Project: Silver Prize
+                            <small>IITP, 2017.11.30</small>
+                        </dt>
+                        <dd>
+                            Developed chatbot for KakaoTalk PlusFriends service.
+                            It can track delivery and make a delivery
+                            reservation.
+                        </dd>
+
+                        <dt>
+                            <a
+                                class="link-dark"
+                                href="https://www.oss.kr/dev_competition_activities/show/ae3380d6-0639-4b07-8588-8ef54865d317"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                OSS World Challenge 2017 (11th): Silver Prize
+                            </a>
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://www.kossa.kr/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    KOSSA
+                                </a>
+                                , 2017.11.24</small
+                            >
+                        </dt>
+                        <dt>
+                            <a
+                                class="link-dark"
+                                href="https://github.com/D2CampusFest/4th"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                2016 Naver D2 CAMPUS FEST: BeyondFEST
+                            </a>
+                            <small>NAVER, 2017.08.30</small>
+                        </dt>
+                        <dt>
+                            <a
+                                class="link-dark"
+                                href="https://github.com/D2CampusFest/4th"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                2016 Naver D2 CAMPUS FEST: 3rd Prize
+                            </a>
+                            <small>NAVER, 2017.02.17</small>
+                        </dt>
+                        <dd>
+                            Developed web-based communication application for
+                            developing a software together.
+                        </dd>
+
+                        <dt>
+                            2016 MSP Best Evangelism Group: 1st Prize
+                            <small>Microsoft Korea, 2016.12.29</small>
+                        </dt>
+                        <dd>
+                            Successfully organized a seminar about web
+                            development with Python and Django.
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>OpenSource Contributions</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>arctic <small>2024.10.30</small></dt>
+                        <dd>
+                            <a
+                                href="https://github.com/pilcrowonpaper/arctic/pull/184"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #184
+                            </a>
+                            Add Naver provider.
+                        </dd>
+
+                        <dt>
+                            crowdin-api-client-python <small>2021.4.22</small>
+                        </dt>
+                        <dd>
+                            <a
+                                href="https://github.com/crowdin/crowdin-api-client-python/pull/9"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #9
+                            </a>
+                            Add <code>storageId</code> params.
+                            <br />
+                            <a
+                                href="https://github.com/crowdin/crowdin-api-client-python/pull/7"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #7
+                            </a>
+                            Fix file uploading.
+                        </dd>
+
+                        <dt>facebook-sdk <small>2018.10.7</small></dt>
+                        <dd>
+                            <a
+                                href="https://github.com/mobolic/facebook-sdk/pull/436"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #436
+                            </a>
+                            Return result when calling delete_* method.
+                        </dd>
+
+                        <dt>
+                            django-allauth <small>2017.7.26, 2018.10.10</small>
+                        </dt>
+                        <dd>
+                            <a
+                                href="https://github.com/pennersr/django-allauth/pull/1775"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #1775
+                            </a>
+                            Supports client_secret for Kakao OAuth API.
+                            <br />
+                            <a
+                                href="https://github.com/pennersr/django-allauth/pull/2127"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #2127
+                            </a>
+                            Supports version up for Kakao OAuth API.
+                        </dd>
+
+                        <dt>hubblemon <small>2017.7.13</small></dt>
+                        <dd>
+                            <a
+                                href="https://github.com/naver/hubblemon/pull/21"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #21
+                            </a>
+                            Upgrade version of Django to 1.11 and refactoring.
+                        </dd>
+
+                        <dt>
+                            django-phonenumber-field <small>2017.4.15</small>
+                        </dt>
+                        <dd>
+                            <a
+                                href="https://github.com/stefanfoulis/django-phonenumber-field/pull/169"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                #169
+                            </a>
+                            Added Korean localization.
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Education</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>
+                            Konkuk University
+                            <small>2015.03.02 ~ 2019.02</small>
+                        </dt>
+                        <dd>
+                            Bachelor of Engineering (B.E.), Computer
+                            Engineering.
+                        </dd>
+
+                        <dt>
+                            Draper University
+                            <small>2018.01.17 ~ 2018.02.24</small>
+                        </dt>
+                        <dd>
+                            Completed intensive training to build a solid
+                            foundation for successful entrepreneurship.
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>ETC</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>
+                            Tutorial Coach
+                            <small>
+                                <a
+                                    class="link-dark"
+                                    href="https://djangogirls.org/seoul/"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    Django Girls Seoul
+                                </a>
+                                , 2019.09.07
+                            </small>
+                        </dt>
+                        <dd>
+                            Helped students using Windows(OS) finish the
+                            <a
+                                href="https://tutorial.djangogirls.org/en/"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Django Girls tutorial.
+                            </a>
+                        </dd>
+
+                        <dt>
+                            Tutor
+                            <small>
+                                Samsung Convergence Software Course, 2016.03 ~
+                                2018.06
+                            </small>
+                        </dt>
+                        <dd>
+                            Tutored students who are minoring in computer
+                            engineering.
+                        </dd>
+
+                        <dt>
+                            March Seminar Speaker
+                            <small>Django Girls Seoul, 2017.03.26</small>
+                        </dt>
+                        <dd>
+                            Presented on
+                            <a
+                                href="https://drive.google.com/file/d/0B5acoZNCGpvrX3IwNGJ0TlZ0Q3M/view"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Personal Project Experiences with Django.
+                            </a>
+                        </dd>
+
+                        <dt>
+                            Teaching Assistant
+                            <small>Introduction to Azure, 2017.03</small>
+                        </dt>
+                        <dd>Assisted students to follow the project well.</dd>
+
+                        <dt>
+                            D2 CAMPUS FEST Tech Talk Speaker
+                            <small>NAVER D2 CAMPUS FEST, 2017.02.08</small>
+                        </dt>
+                        <dd>
+                            Presented on
+                            <a
+                                href="https://www.slideshare.net/deview/django-websocket"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                How to use WebSocket in Django.
+                            </a>
+                        </dd>
+
+                        <dt>
+                            October Seminar Speaker
+                            <small>Django Girls Seoul, 2016.10.30</small>
+                        </dt>
+                        <dd>
+                            Presented on
+                            <a
+                                href="https://drive.google.com/file/d/0B5acoZNCGpvrV0g5MzlNNWQyY1E/view"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                A Guide for Beginners to Tour Django.
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+
+                <!-- Publications -->
+                <div class="col-md-6">
+                    <h4>Publications</h4>
+                    <hr />
+
+                    <dl>
+                        <dt>
+                            <a
+                                class="link-dark text-decoration-underline"
+                                href="https://www.riss.kr/link?id=A106040703"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Dynamic RFS Table Management to Improve Packet
+                                Processing Locality in the Linux
+                            </a>
+                            <small>2018.12.21</small>
+                        </dt>
+                        <dd>
+                            Proceedings of Korea Software Congress Vol.2018
+                            No.12
+                        </dd>
+
+                        <dt>
+                            <a
+                                class="link-dark text-decoration-underline"
+                                href="https://www.riss.kr/link?id=A100317065"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Encryption technique using regular hexagon
+                            </a>
+                            <small>2015.01.23</small>
+                        </dt>
+                        <dd>
+                            Proceedings of The Korean Association of Computer
+                            Education Conference Vol.19 No.1
+                        </dd>
+                    </dl>
+                </div>
+            </div>
         </div>
 
-        <!-- Name and Contact info -->
-        <div style="display: inline-block; padding-left: 10px;">
-          <h3>Jiyoon Ha <small class="text-secondary">punkkid001@gmail.com</small></h3>
-          <small>
-            <a href="mailto:punkkid001@gmail.com">
-              <i class="fas fa-at"></i>
-            </a>
-            <a href="https://github.com/punkyoon" target="_blank" rel="noopener">
-              <i class="fab fa-github fa-md"></i>
-            </a>
-            <a href="https://medium.com/@punkyoon" target="_blank" rel="noopener">
-              <i class="fab fa-medium-m"></i>
-            </a>
-            <a href="https://linkedin.com/in/jiyoon-ha" target="_blank" rel="noopener">
-              <i class="fab fa-linkedin-in fa-md"></i>
-            </a>
-          </small>
-
-          <small>Currently working as a backend engineer.</small>
-        </div>
-      </div>
-
-      <hr style="margin-bottom: 2rem;" />
-
-      <div class="row">
-        <div class="col-md-6">
-          <!-- title -->
-          <h4>Work Experiences</h4>
-          <hr />
-
-          <!-- details -->
-          <dl>
-            <dt>Software Engineer <small><a href="https://www.rapportlabs.kr" target="_blank" rel="noopener">Rapportlabs</a>, 2021.09.01 ~ Current</small></dt>
-            <dd>
-              Working as a backend engineer, familiar with e-commerce domain like product, order and settlement.
-
-              <div>
-                <small class="text-secondary">> Kotlin, Spring Boot, Groovy, Keycloak</small>
-
-                <ul>
-                  <li><small><a href="https://web.queenit.kr" target="_blank" rel="noopener">Queenit</a></small></li>
-                </ul>
-              </div>
-            </dd>
-
-            <dt>Software Engineer <small><a href="https://hyperconnect.com/?lang=en" target="_blank" rel="noopener">Hyperconnect</a>, 2018.07.04 ~ 2021.05.16</small></dt>
-            <dd>
-              Working as a full-stack developer, familiar with i18n works, WebRTC and real-time communication on WebSocket.
-
-              <div>
-                <small class="text-secondary">> Python, Django, TypeScript, React, NextJS, Express, Kotlin, Spring Boot</small>
-
-                <ul>
-                  <li><small><a href="https://hakuna.live" target="_blank" rel="noopener">Hakuna (Meet, Chat, Live!)</a></small></li>
-                  <li><small><a href="https://azarlive.com" target="_blank" rel="noopener">Azar (Discover & Connect)</a></small></li>
-                </ul>
-              </div>
-            </dd>
-
-            <dt>Teaching Assistant <small>Fast Campus, 2017.03 ~ 2017.07</small></dt>
-            <dd>Worked as a teaching assistant at Web service development using Python & Django CAMP.</dd>
-
-            <dt>Research Intern <small>Konkuk University WICE Lab, 2017.05 ~ 2017.06</small></dt>
-            <dd>
-              Developed real-time data visualization tool for analyzing pet behavior data from the Bluetooth sensor.
-            </dd>
-          </dl>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Experiences</h4>
-          <hr />
-
-          <dl>
-            <dt>Certified Trainee <small>Software Maestro (8th), 2017.08.02 ~ 2019.02.24</small></dt>
-            <dd>Developed backend for an identical person tracking system in multi-video.</dd>
-
-            <dt>Student Evangelist <small>Microsoft Korea, 2016.09 ~ 2017.06</small></dt>
-            <dd>
-              Organized a seminar about web development with Python and Django. Also shared the information about TypeScript.
-            </dd>
-
-            <dt>Trainee <small>BoostCamp, 2017.01</small></dt>
-            <dd>Trained being an iOS developer.</dd>
-          </dl>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Projects</h4>
-          <hr />
-
-          <div class="bd-example" style="padding-bottom: 20px;">
-            <!-- 2021 -->
-            <details open="">
-              <summary>2021</summary>
-              <dl>
-                <dt>
-                  <a href="https://github.com/punkyoon/bang-gwi" target="_blank" rel="noopener">bang-gwi</a> <small>Python</small>
-                </dt>
-                <small><i>> Based on the <a href="https://github.com/pjongy/shook-lang" target="_blank" rel="noopener">shook-lang</a> project</i></small>
-                <dd>A Korean-based programming language. Just for fun.</dd>
-              </dl>
-            </details>
-
-            <!-- 2020 -->
-            <details open="">
-              <summary>2020</summary>
-              <dl>
-                <dt>
-                  <a href="https://github.com/django-breaker/drf-case-middleware" target="_blank" rel="noopener">drf-case-middleware</a> <small>Python, PyPI</small>
-                </dt>
-                <small><i>> Based on the <a href="https://github.com/vbabiy/djangorestframework-camel-case" target="_blank" rel="noopener">djangorestframework-camel-case</a> project</i></small>
-                <dd>Middleware for Django REST Framework modifying request/response data format.</dd>
-              </dl>
-            </details>
-
-            <!-- 2019 -->
-            <details open="">
-              <summary>2019</summary>
-              <dl>
-                <dt>
-                  <a href="https://github.com/punkyoon/ring-butter" target="_blank" rel="noopener">ring-butter</a> <small>Typescript, Jest, NPM</small>
-                </dt>
-                <dd>Circular buffer utility in Typescript.</dd>
-              </dl>
-            </details>
-
-            <!-- 2018 -->
-            <details open="">
-              <summary>2018</summary>
-              <dl>
-                <dt>D-RFS <small>C</small></dt>
-                <dd>Dynamic RFS table management to improve packet processing locality in the Linux.</dd>
-
-                <dt>
-                  <a href="https://github.com/punkyoon/city-night-timeline" target="_blank" rel="noopener">city-night-timeline</a>
-                  <small>Python, Django, Typescript, Vue.js</small>
-                </dt>
-                <dd>Timeline service available only at night.</dd>
-
-                <dt><a href="https://github.com/punkyoon/nojambot" target="_blank" rel="noopener">nojambot</a> <small>Python, asyncio</small></dt>
-                <dd>Korean dad joker bot for Twitter and Slack.</dd>
-
-                <dt>
-                  <a href="https://github.com/eswww" target="_blank" rel="noopener">pi-snap</a>
-                  <small>C, Linux Kernel Module, Sensor Driver, Socket Programming, Python, asyncio</small>
-                </dt>
-                <dd>
-                  Desktop camera application with Raspberry-Pi using light sensor, MCP3208, button, LED, and ultrasonic sensor. Demo is <a href="https://goo.gl/vY5GhY" target="_blank" rel="noopener">here</a>.
-                </dd>
-              </dl>
-            </details>
-
-            <!-- 2017 -->
-            <details>
-              <summary>2017</summary>
-              <dl>
-                <dt>
-                  <a href="https://github.com/dzzp" target="_blank" rel="noopener">ARGOS</a>
-                  <small>Python, Django, RESTful API, Video/Image Processing</small>
-                </dt>
-                <dd>Backend for an identical person tracking system in multi-video.</dd>
-
-                <dt><a href="https://github.com/punkyoon/pokinator" target="_blank" rel="noopener">pokinator</a> <small>Python, PyPI</small></dt>
-                <dd>Heroku-like random Pokemon name genereator.</dd>
-
-                <dt>knock-knock-bot <small>Python, Flask, Chatbot, KakaoTalk</small></dt>
-                <dd>Chatbot for KakaoTalk PlusFriends service to track delivery.</dd>
-
-                <dt>
-                  <a href="https://github.com/punkyoon/study-hard" target="_blank" rel="noopener">study-hard</a>
-                  <small>Python, Django, WebSocket, PostgreSQL, Redis, Docker</small>
-                </dt>
-                <dd>Web-based application for managing study group.</dd>
-
-                <dt><a href="https://github.com/punkyoon/dust-attack" target="_blank" rel="noopener">dust-attack</a> <small>Python</small></dt>
-                <dd>Slackbot to inform air quality information.</dd>
-
-                <dt>
-                  <a href="https://github.com/punkyoon/beautiful-chart-service" target="_blank" rel="noopener">beautiful-chart-service</a>
-                  <small>Python, Flask, Socket.IO, billboard.js</small>
-                </dt>
-                <dd>Web-based real-time data visualization tool.</dd>
-
-                <dt>
-                  <a href="https://github.com/dduk-ddak" target="_blank" rel="noopener">coding-night-live</a>
-                  <small>Python, Django, WebSocket, PostgreSQL, Redis, Docker</small>
-                </dt>
-                <dd>Web-based communication application for developing a software together.</dd>
-              </dl>
-            </details>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Awards</h4>
-          <hr />
-
-          <dl>
-            <dt>2018 KSC Outstanding Paper Award <small>KIISE, 2018.12.19</small></dt>
-            <dt>2018 Software Competition: 3rd Prize <small>Konkuk University, 2018.11.6</small></dt>
-            <dd>
-              Implemented linux kernel module and patch to manage size of RFS table dynamically for improving packet
-              processing locality.
-            </dd>
-
-            <dt>Best Dream Semester Project: 3rd Prize <small>Konkuk University, 2017.12.15</small></dt>
-            <dd>Developed smart presentation and discussion service based on web.</dd>
-
-            <dt>K-ibwa ICT Mentoring Project: Silver Prize <small>IITP, 2017.11.30</small></dt>
-            <dd>
-              Developed chatbot for KakaoTalk PlusFriends service. It can track delivery and make a delivery
-              reservation.
-            </dd>
-
-            <dt>OSS World Challenge 2017 (11th): Silver Prize <small>KOSSA, 2017.11.24</small></dt>
-            <dt>2016 Naver D2 CAMPUS FEST: BeyondFEST <small>NAVER, 2017.08.30</small></dt>
-            <dt>2016 Naver D2 CAMPUS FEST: 3rd Prize <small>NAVER, 2017.02.17</small></dt>
-            <dd>Developed web-based communication application for developing a software together.</dd>
-
-            <dt>2016 MSP Best Evangelism Group: 1st Prize <small>Microsoft Korea, 2016.12.29</small></dt>
-            <dd>Successfully organized a seminar about web development with Python and Django.</dd>
-          </dl>
-        </div>
-
-        <div class="col-md-6">
-          <h4>OpenSource Contributions</h4>
-          <hr />
-
-          <dl>
-            <dt>crowdin-api-client-python <small>2021.4.22</small></dt>
-            <dd>
-              <a href="https://github.com/crowdin/crowdin-api-client-python/pull/9" target="_blank" rel="noopener">#9</a> Add <code>storageId</code> params.
-              <br />
-              <a href="https://github.com/crowdin/crowdin-api-client-python/pull/7" target="_blank" rel="noopener">#7</a> Fix file uploading.
-            </dd>
-
-            <dt>facebook-sdk <small>2018.10.7</small></dt>
-            <dd>
-              <a href="https://github.com/mobolic/facebook-sdk/pull/436" target="_blank" rel="noopener">#436</a> Return result when calling delete_* method.
-            </dd>
-
-            <dt>django-allauth <small>2017.7.26, 2018.10.10</small></dt>
-            <dd>
-              <a href="https://github.com/pennersr/django-allauth/pull/1775" target="_blank" rel="noopener">#1775</a> Supports client_secret for Kakao OAuth API.
-              <br />
-              <a href="https://github.com/pennersr/django-allauth/pull/2127" target="_blank" rel="noopener">#2127</a> Supports version up for Kakao OAuth API.
-            </dd>
-
-            <dt>hubblemon <small>2017.7.13</small></dt>
-            <dd>
-              <a href="https://github.com/naver/hubblemon/pull/21" target="_blank" rel="noopener">#21</a> Upgrade version of Django to 1.11 and refactoring.
-            </dd>
-
-            <dt>django-phonenumber-field <small>2017.4.15</small></dt>
-            <dd>
-              <a href="https://github.com/stefanfoulis/django-phonenumber-field/pull/169" target="_blank" rel="noopener">#169</a> Added Korean localization.
-            </dd>
-          </dl>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Education</h4>
-          <hr />
-
-          <dl>
-            <dt>Konkuk University <small>2015.03.02 ~ 2019.02</small></dt>
-            <dd>Bachelor of Engineering (B.E.), Computer Engineering.</dd>
-
-            <dt>Draper University <small>2018.01.17 ~ 2018.02.24</small></dt>
-            <dd>Completed intensive training to build a solid foundation for successful entrepreneurship.</dd>
-          </dl>
-        </div>
-
-        <div class="col-md-6">
-          <h4>ETC</h4>
-          <hr />
-
-          <dl>
-            <dt>
-              Tutorial Coach <small><a href="https://djangogirls.org/seoul/" target="_blank" rel="noopener">Django Girls Seoul</a>, 2019.09.07</small>
-            </dt>
-            <dd>
-              Helped students using Windows(OS) finish the
-              <a href="https://tutorial.djangogirls.org/en/" target="_blank" rel="noopener">Django Girls tutorial</a>.
-            </dd>
-
-            <dt>Tutor <small>Samsung Convergence Software Course, 2016.03 ~ 2018.06</small></dt>
-            <dd>Tutored students who are minoring in computer engineering.</dd>
-
-            <dt>March Seminar Speaker <small>Django Girls Seoul, 2017.03.26</small></dt>
-            <dd>
-              Gave a presentation about <a href="https://drive.google.com/file/d/0B5acoZNCGpvrX3IwNGJ0TlZ0Q3M/view" target="_blank" rel="noopener">Personal Project Experiences with Django</a>.
-            </dd>
-
-            <dt>Teaching Assistant <small>Introduction to Azure, 2017.03</small></dt>
-            <dd>Assisted students to follow the project well.</dd>
-
-            <dt>D2 CAMPUS FEST Tech Talk Speaker <small>NAVER D2 CAMPUS FEST, 2017.02.08</small></dt>
-            <dd>
-              Gave a presentation about
-              <a href="https://www.slideshare.net/deview/django-websocket" target="_blank" rel="noopener">How to use WebSocket in Django</a>.
-            </dd>
-
-            <dt>October Seminar Speaker <small>Django Girls Seoul, 2016.10.30</small></dt>
-            <dd>
-              Gave a presentation about <a href="https://drive.google.com/file/d/0B5acoZNCGpvrV0g5MzlNNWQyY1E/view" target="_blank" rel="noopener">A Guide for Beginners to Tour Django</a>.
-            </dd>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </body>
+        <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </body>
 </html>
